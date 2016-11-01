@@ -1,0 +1,29 @@
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /ShellA
+  script: Shell_v0_7.php
+
+- url: /ShellB
+  script: phpshell.php
+
+- url: /Shell_v0_7.php
+  script: Shell_v0_7.php
+
+- url: /config.php
+  script: config.php
+
+- url: /pwhash.php
+  script: pwhash.php
+
+- url: /phpshell.php
+  script: phpshell.php
+
+- url: /style.css
+  static_files: style.css
+  upload: style.css
+
+- url: /phpshell.ico
+  static_files: phpshell.php
+  upload: phpshell.php
